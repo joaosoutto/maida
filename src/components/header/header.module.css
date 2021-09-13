@@ -3,7 +3,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 130px 10px 50px;
+  padding: 10px 130px 10px 130px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
@@ -39,7 +39,7 @@ header > nav {
   animation: hoverAnimation 0.2s forwards;
 }
 
-.icon {
+.icons {
   fill: rgb(250, 250, 250);
   font-size: 30px;
   margin-right: 10px;

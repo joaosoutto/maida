@@ -10,6 +10,7 @@ import Header from "./components/header";
 import Footer from "./components/footer";
 
 import { AppProvider } from "./context/AppContext";
+import Search from "./pages/search";
 
 const NotFoundRedirect = () => <Redirect to="/" />;
 
@@ -21,6 +22,7 @@ function App() {
           <Header />
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route exact path="/search" component={Search} />
             <Route exact path="/fav" component={Fav} />
             <Route component={NotFoundRedirect} />
           </Switch>

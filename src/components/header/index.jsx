@@ -14,11 +14,11 @@ const Header = () => (
 
     <nav>
       <Link to="/search" className={styles.link}>
-        <SearchIcon className={styles.icon} />
+        <SearchIcon className={styles.icons} style={{fill: 'rgb(250,250,250)', fontSize: '30px'}} />
         Buscar CEP
       </Link>
       <Link to="/fav" className={styles.link}>
-        <FavoriteBorderIcon className={styles.icon} />
+        <FavoriteBorderIcon className={styles.icons} style={{fill: 'rgb(250,250,250)', fontSize: '30px'}} />
         favoritos
       </Link>
     </nav>

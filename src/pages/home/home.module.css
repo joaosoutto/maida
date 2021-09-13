@@ -5,7 +5,7 @@
 .sec {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
-  padding: 12px 60px;
+  padding: 30px 80px 30px 130px;
 }
 
 .welcome {

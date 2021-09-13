@@ -1,0 +1,76 @@
+.result {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 10px;
+  border-top: 1px solid rgb(56, 191, 83);
+}
+
+.result > h4 {
+  font-size: 20px;
+  margin: 14px 0;
+  color: rgb(40, 40, 40);
+  padding-left: 10px;
+  border-left: 4px solid rgb(56, 191, 83);
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.buttons > button {
+  height: 40px;
+  padding: 26px;
+  width: 45%;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+
+.clear {
+  border: 2px solid #a02b2b;
+  color: #a02b2b;
+  background-color: #fff;
+}
+
+.clear:hover {
+  background-color: #a02b2b;
+  color: #fff;
+}
+
+.clear > svg {
+  fill: #a02b2b;
+}
+
+.clear:hover > svg {
+  fill: #fff;
+}
+
+.save {
+  border: 2px solid rgb(56, 191, 83);
+  color: rgb(56, 191, 83);
+  background-color: #fff;
+}
+
+.save > svg {
+  fill: rgb(56, 191, 83);
+}
+
+.save:hover {
+  color: #fff;
+  background-color: rgb(56, 191, 83);
+}
+
+.save:hover > svg {
+  fill: #fff;
+}
