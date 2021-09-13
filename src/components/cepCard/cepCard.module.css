@@ -43,3 +43,27 @@
 .clear:hover > svg {
   fill: #fff;
 }
+
+@media (max-width: 40rem) {
+  .wrapper {
+    padding-left: 10;
+    margin: 10px 0;
+  }
+
+  .wrapper h5 {
+    text-align: left;
+    width: 90%;
+  }
+
+  .clear {
+    width: 100%;
+    margin: 10px 0;
+    background-color: #a02b2b;
+    color: #fff;
+  }
+
+  .clear > svg {
+    fill: #fff;
+    margin-right: 6px;
+  }
+}

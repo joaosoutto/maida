@@ -61,3 +61,14 @@
   border: 2px solid rgb(172, 240, 187);
   cursor: pointer;
 }
+
+@media (max-width: 40rem) {
+.wrapper {
+  align-items: center;
+  margin-top: 30px;
+}
+
+.wrapper > label {
+  display: none;
+}
+}

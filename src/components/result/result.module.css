@@ -74,3 +74,20 @@
 .save:hover > svg {
   fill: #fff;
 }
+
+@media (max-width: 40rem) {
+  .result > h4 {
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .buttons {
+    margin-bottom: 100px;
+    flex-direction: column;
+  }
+
+  .buttons > button {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
