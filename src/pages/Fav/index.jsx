@@ -11,12 +11,11 @@ const Fav = () => {
 
   useEffect(() => {
     setFavorites(JSON.parse(localStorage.getItem("favorites")));
-    console.log(favorites);
   }, []);
 
   return (
-    <section className={styles.sec}>
-      <div className={styles.left}>
+    <section className="sec animeLeft">
+      <div className="left">
         <h1>
           <FavoriteIcon
             style={{
@@ -35,14 +34,12 @@ const Fav = () => {
               ))}
             </div>
           ) : (
-            <h4>Você ainda não possui CEP's favoritos!</h4>
+            <h4 className={styles.noResults}>Você ainda não possui CEP's favoritos!</h4>
           )}
         </div>
       </div>
-      <div className={styles.right}>
-        <h1>Mapa</h1>
+      <div className="right">
         <MyMap />
-
       </div>
     </section>
   );

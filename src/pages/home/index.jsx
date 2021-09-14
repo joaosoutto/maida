@@ -4,7 +4,7 @@ import styles from "./home.module.css";
 import gif from "../../assets/gif.gif";
 
 const Home = () => (
-  <section className={styles.sec}>
+  <section className={`${styles.secPadding} animeLeft`}>
     <div className={styles.welcome}>
       <h1>
         Bem Vindo ao <span>Point Me!</span>

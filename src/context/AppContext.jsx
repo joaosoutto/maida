@@ -8,6 +8,7 @@ const AppProvider = ({ children }) => {
   const [cep, setCep] = useState("");
   const [searchedCep, setSearchedCep] = useState({});
   const [error, setError] = useState(false);
+  const [notFound, setNotFound] = useState(false);
 
   const context = {
     error,
@@ -20,6 +21,8 @@ const AppProvider = ({ children }) => {
     setLoading,
     favorites,
     setFavorites,
+    notFound,
+    setNotFound,
   };
 
   return <AppContext.Provider value={context}>{children}</AppContext.Provider>;

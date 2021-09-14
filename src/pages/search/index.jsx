@@ -19,8 +19,8 @@ const Search = () => {
 
 
   return (
-    <section className={styles.sec}>
-      <div className={styles.left}>
+    <section className="sec animeLeft">
+      <div className="left">
         <h1>
           <SearchIcon
             style={{
@@ -36,8 +36,7 @@ const Search = () => {
           <Result />
         </div>
       </div>
-      <div className={styles.right}>
-        <h1>Mapa</h1>
+      <div className="right">
         <MyMap />
       </div>
     </section>

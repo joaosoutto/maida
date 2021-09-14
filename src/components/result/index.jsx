@@ -7,7 +7,7 @@ import styles from "./result.module.css";
 import { AppContext } from "../../context/AppContext";
 
 const Result = () => {
-  const { loading, searchedCep, setSearchedCep, setFavorites, favorites } =
+  const { loading, searchedCep, setSearchedCep, setFavorites, favorites, notFound } =
     useContext(AppContext);
 
   useEffect(() => {
@@ -46,7 +46,7 @@ const Result = () => {
     <div className={styles.result}>
       {loading ? (
         <p>Carregando...</p>
-      ) : searchedCep.cep ? (
+      ) : notFound ? <p className={styles.cepNotFound}>Cep não encontrado! Tente novamente.</p> : searchedCep.cep ? (
         <>
           <h4>CEP: {searchedCep && searchedCep.cep}</h4>
           <h4>Logradouro: {searchedCep.logradouro}</h4>
