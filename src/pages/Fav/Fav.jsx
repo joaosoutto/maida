@@ -3,6 +3,8 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 import styles from "./fav.module.css";
 import { AppContext } from "../../context/AppContext";
 import CepCard from "../../components/cepCard";
+import Mapa, { MyMap } from "../../components/Map/Mapa";
+
 
 const Fav = () => {
   const { favorites, setFavorites } = useContext(AppContext);
@@ -39,6 +41,8 @@ const Fav = () => {
       </div>
       <div className={styles.right}>
         <h1>Mapa</h1>
+        <MyMap />
+
       </div>
     </section>
   );

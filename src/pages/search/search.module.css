@@ -1,6 +1,5 @@
 .sec {
   display: flex;
-  grid-template-columns: repeat(2, 1fr);
   align-items: flex-start;
   justify-content: space-around;
 }

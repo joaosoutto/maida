@@ -1,6 +1,16 @@
 .sec {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.left {
+  width: 45%;
+  padding-left: 40px;
+}
+
+.right {
+  width: 45%;
 }
 
 .left h1 {
@@ -49,10 +59,9 @@
   }
 
   .left {
-    width: 80%;
+    padding: 0;
+    width: 90%;
     align-items: center;
-    display: flex;
-    flex-direction: column;
   }
 
   .card {
